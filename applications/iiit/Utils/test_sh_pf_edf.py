@@ -38,7 +38,7 @@ def calc_energy_wh(pwr_wh, duration_sec):
 class MyTestCase(unittest.TestCase):
     _pf_sh_fan = {
         "roundup": 10,
-        "idx": 0,
+        "idx": 1,
         "coefficients": [
             {"a": 70, "b": 5, "c": 20},
             {"a": 60, "b": 10, "c": 30},
@@ -48,7 +48,7 @@ class MyTestCase(unittest.TestCase):
 
     _pf_rc = {
         "roundup": 0.5,
-        "idx": 2,
+        "idx": 0,
         "coefficients": [
             {"a": 1, "b": -3.5, "c": 23},
             {"a": 1, "b": -3.5, "c": 24},
@@ -58,7 +58,7 @@ class MyTestCase(unittest.TestCase):
 
     _edf_rc = {
         "roundup": 0.5,
-        "idx": 2,
+        "idx": 0,
         "coefficients": [
             {"a": 0, "b": -100, "c": 2350},
             {"a": 0, "b": -100, "c": 2400},
