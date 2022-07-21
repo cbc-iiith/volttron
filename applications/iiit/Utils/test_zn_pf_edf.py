@@ -157,7 +157,7 @@ class MyTestCase(unittest.TestCase):
     def test_zn_ac_light(self):
         duration = 3600
         i = 1
-        print('SL_NO, PP_AC, PP_LI, TSP, ED_AC, LSP, ED_LI, TED')
+        print('\nSL_NO, PP_AC, PP_LI, TSP, ED_AC, LSP, ED_LI, TED')
         for bid_pp_ac in [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]:
             for bid_pp_li in [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]:
 
