@@ -455,7 +455,7 @@ class VolttronBridge(Agent):
         self._local_devices_register.append(sender)
         index = self._local_devices_register.index(sender)
         self._local_device_ids.insert(index, device_id)
-        _log.debug('registered!!!')
+        _log.debug('local ed agent registered!!!')
         return True
 
     # noinspection PyArgumentList
@@ -945,7 +945,7 @@ class VolttronBridge(Agent):
         self._ds_device_ids.insert(index, device_id)
         self._ds_pp_msg_retry_count.insert(index, 0)
         self._ds_ed_msg_retry_count.insert(index, 0)
-        _log.debug('registered!!!')
+        _log.debug('ds bridge registered!!!')
         return True
 
     def _unregister_ds_bridge(self, message):
